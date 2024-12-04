@@ -1,0 +1,40 @@
+#header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100px;
+  padding: 0 5rem;
+  background-color: inherit;
+  color: white;
+}
+
+.header__logo {
+  font-family: 'Agbalumo', serif;
+  font-size: 2rem;
+}
+
+.header__nav {
+  ul {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-between;
+  }
+  li {
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+
+    &:last-child {
+      font-size: 2rem;
+    }
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,10 +1,10 @@
 :root {
-    --mainfont-nanum : "NanumSquare"
-    --mainfont-nanumneo : "NanumSquareNeo"
-    --logofont : "Agbalumo"
+  $mainfont: 'NanumSquare';
+  $subfont: 'NanumSquareNeo';
+  $logofont: 'Agbalumo';
 
-    font-family: var(--mainfont-nanum), var(--mainfont-nanumneo);
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
+  font-family: $mainfont, $subfont;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
 }

@@ -3,3 +3,12 @@
 //base
 @import 'base/reset';
 @import 'base/vars';
+
+//components
+@import 'components/header';
+
+//pages
+@import 'pages/home';
+@import 'pages/price';
+@import 'pages/history';
+@import 'pages/cart';
