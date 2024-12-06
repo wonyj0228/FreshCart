@@ -17,8 +17,9 @@ function Home() {
           </button>
         </div>
         <div className="home__col2">
-          <h1>Fresh</h1>
-          <h1>Cart</h1>
+          <h1>
+            Fresh <br /> Cart
+          </h1>
         </div>
       </div>
     </>

@@ -1,9 +1,26 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaCircleUser } from 'react-icons/fa6';
+import { useEffect, useRef, useState } from 'react';
 
 function Header() {
+  const { pathname } = useLocation();
+  const [theme, setTheme] = useState(false);
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (pathname === '/' || pathname === '/price') {
+      setTheme(false);
+    } else {
+      setTheme(true);
+    }
+  }, [pathname]);
+
   return (
-    <header id="header">
+    <header
+      id="header"
+      ref={ref}
+      className={`header__theme-${theme ? 'white' : 'default'}`}
+    >
       <div className="header__logo">
         <a href="/">
           <span>Fresh Cart</span>

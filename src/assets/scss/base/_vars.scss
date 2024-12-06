@@ -1,8 +1,11 @@
-:root {
-  $mainfont: 'NanumSquare';
-  $subfont: 'NanumSquareNeo';
-  $logofont: 'Agbalumo';
+$mainfont: 'NanumSquare';
+$subfont: 'NanumSquareNeo';
+$logofont: 'Agbalumo';
 
+$green: #769008;
+$shadow: 3px 4px 5px black;
+
+:root {
   font-family: $mainfont, $subfont;
   font-size: 16px;
   line-height: 1.5;
