@@ -11,6 +11,9 @@ function Price() {
       <div className="price__search">
         <input placeholder="품목을 입력해주세요" />
         <FaSearch />
+      </div>
+
+      <div className="price_layout">
         <div className="price__search-hot">
           <span>HOT</span>
           <FaFire />
@@ -21,7 +24,6 @@ function Price() {
           <span>고춧가루</span>
         </div>
       </div>
-      <div className="price_layout"></div>
     </div>
   );
 }
