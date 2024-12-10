@@ -3,14 +3,14 @@
 }
 
 .price__bg {
-  height: 75vh;
+  height: 50vh;
   min-height: 500px;
   text-align: center;
   background-color: #779102;
 }
 .price__img {
   width: 1200px;
-  height: 75vh;
+  height: 50vh;
   min-height: 500px;
 }
 
@@ -53,4 +53,23 @@
 .price__search-hot {
   margin-top: 25px;
   padding: 10px 10px;
+  font-weight: 600;
+
+  & > span:first-child {
+    color: $red;
+    margin: 1rem;
+  }
+
+  .price__search-keyword {
+    text-decoration: underline;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+.price__frugal {
+  margin-top: 3rem;
+
+  .price__frugal-list {
+  }
 }

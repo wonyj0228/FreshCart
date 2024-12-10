@@ -1,4 +1,5 @@
-import { FaSearch, FaFire } from 'react-icons/fa';
+import { FaSearch, FaFire, FaCoins } from 'react-icons/fa';
+import { BiSolidCategory } from 'react-icons/bi';
 import priceImg from '../assets/images/priceImg.png';
 
 function Price() {
@@ -15,13 +16,23 @@ function Price() {
 
       <div className="price_layout">
         <div className="price__search-hot">
-          <span>HOT</span>
-          <FaFire />
-          <span>고구마</span>
-          <span>사과</span>
-          <span>토마토</span>
-          <span>쌀</span>
-          <span>고춧가루</span>
+          <span>
+            HOT <FaFire />
+          </span>
+          <span className="price__search-keyword">고구마</span>
+          <span className="price__search-keyword">사과</span>
+          <span className="price__search-keyword">토마토</span>
+          <span className="price__search-keyword">쌀</span>
+          <span className="price__search-keyword">고춧가루</span>
+        </div>
+
+        <div className="price__frugal">
+          <h1>이번 주 알뜰정보</h1>
+          <div className="price__frugal-list"></div>
+        </div>
+
+        <div className="price__category">
+          <h1>부류별 가격현황</h1>
         </div>
       </div>
     </div>
