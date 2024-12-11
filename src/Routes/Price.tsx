@@ -1,6 +1,7 @@
 import { FaSearch, FaFire, FaCoins } from 'react-icons/fa';
 import { BiSolidCategory } from 'react-icons/bi';
 import priceImg from '../assets/images/priceImg.png';
+import PriceFrugal from '../components/PriceFrugal';
 
 function Price() {
   return (
@@ -28,11 +29,16 @@ function Price() {
 
         <div className="price__frugal">
           <h1>이번 주 알뜰정보</h1>
-          <div className="price__frugal-list"></div>
+          <div className="price__frugal-list">
+            <PriceFrugal />
+            <PriceFrugal />
+            <PriceFrugal />
+          </div>
         </div>
 
         <div className="price__category">
           <h1>부류별 가격현황</h1>
+          <div className="price__category-list"></div>
         </div>
       </div>
     </div>

@@ -70,6 +70,21 @@
 .price__frugal {
   margin-top: 3rem;
 
+  h1 {
+    margin-bottom: 1rem;
+  }
+
   .price__frugal-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+}
+
+.price__category {
+  margin-top: 3rem;
+
+  h1 {
+    margin-bottom: 1rem;
   }
 }

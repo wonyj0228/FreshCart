@@ -1,0 +1,67 @@
+.price__frugal-item {
+  width: 100%;
+  height: 170px;
+  background-color: $green;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: auto 100px;
+}
+
+.price__frugal-info {
+  padding: 1rem 0 1rem 1.5rem;
+  color: white;
+  h2 {
+    margin-bottom: 0.5rem;
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .price__frugal-week {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+
+    & > span {
+      padding: 5px 15px;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .price__last {
+      background-color: $gray;
+      border-radius: 10px;
+    }
+    .price__this {
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+    }
+  }
+}
+
+.price__frugal-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 50px;
+    height: 100px;
+  }
+  span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+.price__down {
+  color: $blue;
+}
+
+.price__up {
+  color: $red;
+}
