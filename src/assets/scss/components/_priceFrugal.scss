@@ -65,3 +65,41 @@
 .price__up {
   color: $red;
 }
+
+.price__category-list {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.price__category-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: $yellow;
+    z-index: 3;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: white;
+    }
+  }
+}

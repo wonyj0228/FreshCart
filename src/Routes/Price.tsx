@@ -1,6 +1,11 @@
-import { FaSearch, FaFire, FaCoins } from 'react-icons/fa';
-import { BiSolidCategory } from 'react-icons/bi';
+import { FaSearch, FaFire } from 'react-icons/fa';
 import priceImg from '../assets/images/priceImg.png';
+import type1 from '../assets/images/price/price01.jpg';
+import type2 from '../assets/images/price/price02.jpg';
+import type3 from '../assets/images/price/price03.jpg';
+import type4 from '../assets/images/price/price04.jpg';
+import type5 from '../assets/images/price/price05.jpg';
+import type6 from '../assets/images/price/price06.jpg';
 import PriceFrugal from '../components/PriceFrugal';
 
 function Price() {
@@ -38,7 +43,44 @@ function Price() {
 
         <div className="price__category">
           <h1>부류별 가격현황</h1>
-          <div className="price__category-list"></div>
+          <div className="price__category-list">
+            <div className="price__category-item">
+              <img src={type1} />
+              <div>
+                <span>식량작물</span>
+              </div>
+            </div>
+            <div className="price__category-item">
+              <img src={type2} />
+              <div>
+                <span>채소류</span>
+              </div>
+            </div>
+            <div className="price__category-item">
+              <img src={type3} />
+              <div>
+                <span>특용작물</span>
+              </div>
+            </div>
+            <div className="price__category-item">
+              <img src={type4} />
+              <div>
+                <span>과일류</span>
+              </div>
+            </div>
+            <div className="price__category-item">
+              <img src={type5} />
+              <div>
+                <span>축산물</span>
+              </div>
+            </div>
+            <div className="price__category-item">
+              <img src={type6} />
+              <div>
+                <span>수산물</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
